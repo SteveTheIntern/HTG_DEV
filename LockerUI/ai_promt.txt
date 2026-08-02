@@ -1,0 +1,27 @@
+Hallo bitte erstelle mir ein Carbon.Plugin auf English für meinen Rust Server auf dem Modding frame Carbon mit dem Namen SteveOutfits und dem Author SteveAi. 
+Dieses Plugin wird so funktionieren: Es wird auf der map an bestimmten koordinaten einen Locker/Spind geben der nicht die reguläre funktion hat sondern einfach nur eine kosmetische prefab ist. An diesen Koordinaten die ich dann später angebe in einer liste soll ein 5.0f trigger radius sein und wenn man in diesen Radius kommt soll mittig in dem radius ein hologram text kommen mit: "Press<color=#6fa8dc> [E]</color> to open the Outfit Menu" Wenn ein Spieler dann in diesem Radius die Taste E drückt wird ein Menu geöffnet wozu ich auch eine Ui bereitstelle. Sobald die Ui offen ist kann der Spieler in dieser Ui sein aktuelles Outfit was er in seinen Kleidungs slot hat speichern, löschen und bearbeiten.
+Jeder Spieler hat dann 2 Outfit Slots verfügbar, den rest muss er freischalten im shop und bekommt eine permission: 'steveoutfits_vip' und hat dann zugriff auf alle weiteren und der gesammt Layer Locked aus dem txt document wird nicht mehr angezeigt und alle buttons darunter sind drückbar.
+Nun zur UI die ich als LockerUi.txt document mit anhänge als datei.
+Wichtige Regeln für die Koordinatenumrechnung:
+- Die Inkscape-Auflösung ist 1920x1080.
+- Rust CUI nutzt relative Anchors (0.0 bis 1.0).
+- WICHTIG: Die Y-Achse ist invertiert (Inkscape Y=0 ist oben, Rust Y=1.0 ist oben).
+
+Formeln für jedes SVG-Rechteck (x, y, width, height):
+- AnchorMin = $"{x / 1920f} {(1080 - y - height) / 1080f}"
+- AnchorMax = $"{(x + width) / 1920f} {(1080 - y) / 1080f}"
+
+Nun zu der Ui und den jehweiligen CuiPanels:
+- CuiPanel_0 wird ein schwarzer hintergrund der auch den gesammten bildschirm blurrt mit 0.8 deckkraft
+- CuiPanel_01 kommt auf das Feld der text: LOCKER
+- CuiPanel_02 kommt auf das Feld der text: PAGE
+- CuiPanel_03 kommt auf das Feld der text: 1. wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort der text: LOCKED
+- CuiPanel_04 kommt auf das Feld der text: PAGE wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort das bild mit den selben Maßen wie das Feld mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/locked.png
+- CuiPanel_05 kommt auf das Feld der text: 2. wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort der text: LOCKED
+- CuiPanel_06 kommt auf das Feld der text: PAGE wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort das bild mit den selben Maßen wie das Feld mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/locked.png
+- CuiPanel_07 kommt auf das Feld der text: 3. wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort der text: LOCKED
+- CuiPanel_10 ist einfach nur ein CuiPanel
+- CuiPanel_11 ist einfach nur ein CuiPanel
+- CuiPanel_12 ist einfach nur ein CuiPanel
+- CuiPanel_13 auf das Feld kommt ein CuiInputFieldComponent mit dem Text OUTFIT #1 was man in dem Feld umbenenen kann um dieses Outfit umzubenennen.
+- CuiPanel_14 auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/change_name.png

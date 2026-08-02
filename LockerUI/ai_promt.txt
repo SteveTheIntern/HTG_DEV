@@ -15,13 +15,41 @@ Nun zu der Ui und den jehweiligen CuiPanels:
 - CuiPanel_0 wird ein schwarzer hintergrund der auch den gesammten bildschirm blurrt mit 0.8 deckkraft
 - CuiPanel_01 kommt auf das Feld der text: LOCKER
 - CuiPanel_02 kommt auf das Feld der text: PAGE
-- CuiPanel_03 kommt auf das Feld der text: 1. wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort der text: LOCKED
+- CuiPanel_03 (Button) kommt auf das Feld der text: 1. wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort der text: LOCKED
 - CuiPanel_04 kommt auf das Feld der text: PAGE wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort das bild mit den selben Maßen wie das Feld mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/locked.png
-- CuiPanel_05 kommt auf das Feld der text: 2. wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort der text: LOCKED
+- CuiPanel_05 (Button) kommt auf das Feld der text: 2. wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort der text: LOCKED
 - CuiPanel_06 kommt auf das Feld der text: PAGE wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort das bild mit den selben Maßen wie das Feld mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/locked.png
-- CuiPanel_07 kommt auf das Feld der text: 3. wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort der text: LOCKED
+- CuiPanel_07 (Button) kommt auf das Feld der text: 3. wenn der spieler steveoutfits_vip hat, wenn nicht kommt dort der text: LOCKED
 - CuiPanel_10 ist einfach nur ein CuiPanel
 - CuiPanel_11 ist einfach nur ein CuiPanel
 - CuiPanel_12 ist einfach nur ein CuiPanel
 - CuiPanel_13 auf das Feld kommt ein CuiInputFieldComponent mit dem Text OUTFIT #1 was man in dem Feld umbenenen kann um dieses Outfit umzubenennen.
 - CuiPanel_14 auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/change_name.png
+- CuiPanel_15 (Button) auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/save.png
+- CuiPanel_16 (Button) auf dieses Panel kommt der text: SAVE
+- CuiPanel_17 (Button) auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/insert.png
+- CuiPanel_18 (Button) auf dieses Feld kommt der text: INSERT
+- CuiPanel_19 (Button) auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/take.png
+- CuiPanel_20 (Button) auf dieses Feld kommt der text: TAKE
+- CuiPanel_21 (Button) auf dieses Feld kommt der text: DELETE
+- CuiPanel_22 (Button) auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/delete.png
+- CuiPanel_23 bis CuiPanel_29 sind die slots wo die icons der clothing items angezeigt werden auch deren skins werden angezeigt und gespeichert. 
+- CuiPanel_30 bis CuiPanel_49 hat den selben aufbau wie bei CuiPanel_10 bis CuiPanel_29
+- CuiPanel_50 bis CuiPanel_69 hat den selben aufbau wie bei CuiPanel_10 bis CuiPanel_29
+- CuiPanel_70 bis CuiPanel_89 hat den selben aufbau wie bei CuiPanel_10 bis CuiPanel_29
+- CuiPanel_90 auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/info.png
+- CuiPanel_91 auf dieses Feld kommt der text: This is your Personal Locker! Save your favorite outfits here for a quick outfit swap, matching your vibe or current activity on the server.
+Don't forget to press SAVE after assigning your outfit or making changes!
+- CuiPanel_92 ist ein Feld was schwarz ist und den hintergrund blurrt. Dieses Feld macht auch alle Felder hinter sich unnutzbar auch wenn dort buttons sind. wenn mann die permission 'steveoutfits_vip' hat wird der ganze kommende ui mit CuiPanel_92 nicht angezeigt und alles dahinter ist nutzbar.
+- CuiPanel_93 auf dieses Feld kommt der text: UNLOCK MORE SLOTS & PAGES
+- CuiPanel_94 auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/new_slot.png
+- CuiPanel_95 auf dieses Feld kommt der text: 2x NEW SLOTS
+- CuiPanel_96 auf dieses Feld kommt der text: PER PAGE
+- CuiPanel_97 auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/locked_big.png
+- CuiPanel_98 auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/store.png
+- CuiPanel_99 auf dieses Feld kommt der text: GET LINK
+- CuiPanel_100 auf das Feld kommt ein bild mit den selben Maßen mit der url: https://raw.githubusercontent.com/SteveTheIntern/HTG_DEV/refs/heads/Maps/LockerUI/new_pages.png
+- CuiPanel_101 auf dieses Feld kommt der text: 2x NEW PAGES
+- CuiPanel_102 auf dieses Feld kommt der text: EACH 4 SLOTS
+
+Die Logik des Plugins ist dass ein Spieler seine Outfits speichern kann.
